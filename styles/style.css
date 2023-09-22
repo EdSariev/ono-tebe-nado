@@ -1,4 +1,4 @@
-/* 19.09.2023 изменения*/
+/* 22.09.2023 изменения*/
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -6,13 +6,20 @@
   align-items: center;
   font-size: 18px;
   font-weight: 400;
-  padding: 92px 51px 100px; 
+  padding: 104px 50px 90px; 
   
+}
+
+.header__menu {
+  padding-bottom: 12px;
+  padding-left: 3px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 26px;
+  gap: 29px;
+  list-style: circle;
+  letter-spacing: 1px;
 }
 
 .header__links-list-item_no-bullit {
@@ -25,47 +32,50 @@
 
 .header__links-list-item {
   border-bottom: #000;
-  list-style: circle;
+}
+
+.header__link {
+  border-bottom: #000;
 }
 
 .logo_header {
-  width: 138px;
-  height: 105px;
-  
+  width: 320px;  
+}
+
+.logo_header-image {
+  width: 160px;
+  height: 110px;
 }
 
 .contants {
-  
+  line-height: 25px;
   font-style: normal;
   display: flex;
   flex-direction: column; 
+  Letter-spacing: 0.6px;
+  padding-bottom: 12px;
 }
 
 .cover {
   background-image: url(../images/cover.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.6);
-  
 }
 
 .cover__title {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  font-size: 100px;
+  font-weight: 700px;
+  letter-spacing: 34px;
   color: #FFF;
   font-family: "Raleway", sans-serif;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 115%;
-  letter-spacing: 30px;
-  text-transform: uppercase;  
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
-  
 .overlay {
   height: inherit;
-  padding: 165px 50px 5px;
+  padding: 175px 36px 5px 55px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -74,24 +84,28 @@
 }
 
 .aligned-text_center {
+  padding-top: 12px;
   width: 100%;
+  max-width: 1370px;
   text-align: center;
 }
 
 .aligned-text_right {
+  padding-top: 12px;
   text-align: right;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.3em;
+  padding-right: px;
+  letter-spacing: 20px;
 }
 
 .cover__description {
   display: flex;
-  padding-top: 121px;
-  padding-left: 50px;
-  padding-right: 5px;
+  padding-top: 136px;
+  padding-right: 30px;
   padding-bottom: 50px;
+  letter-spacing: 1px;
   justify-content: end;
   align-items: center;
   color: #FFF;
@@ -104,7 +118,7 @@
   text-align: end;
   word-spacing: 17.5px;
   text-transform: uppercase;
-  margin-right: 6%;
+  margin-right: 80px;
 }
 
 .bet-button {
@@ -114,13 +128,13 @@
   color: #FFF;
   text-transform: uppercase;
   border: 1px solid #fff;
-  padding: 12px 32px;
+  padding: 13px 32px;
 }
 
 .lots {
-  padding-left: 50px;
-  padding-top: 180px;
-  padding-right: 50px;
+  padding-left: 60px;
+  padding-top: 190px;
+  padding-right: 55px;
 }
 
 .lots__heading {
@@ -135,7 +149,7 @@
   flex-wrap: wrap;
   gap: 25px;
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .lots__card-list-item {
@@ -143,8 +157,8 @@
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 0%;
-  min-height: 450px;
-  min-width: 430px
+  min-height: 470px;
+  min-width: 400px
 }
 
 .lots__look-more-link {
@@ -200,7 +214,7 @@
 .about {
   display: flex;
   gap: 25px;
-  padding: 180px 50px 182px 50px;
+  padding: 197px 50px 182px 50px;
 }
   
 .about__column:last-child {
@@ -211,7 +225,7 @@
   background-color: #000;
   border-radius: 50%;
   margin: 0 95px;
-  padding: 63px 46px;
+  padding: 65px 58px;
 }
   
 .about__logo-image {
@@ -222,6 +236,8 @@
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
+  padding-left: 5px;
+  letter-spacing: 1px;
 }
   
 .about__text {
@@ -231,12 +247,15 @@
   flex-direction: column;
   gap: 25px;
   margin-top: 100px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
 }
     
 .footer {
   font-size: 18px;
   font-weight: 400;
-  padding: 0 50px 90px;
+  padding: 0 55px 90px;
   display: flex;
   justify-content: space-between;
 }
@@ -250,11 +269,13 @@
   width: auto;
   display: flex;
   flex-direction: column;
+  width: 300px; 
 }
   
 .footer__menu-list {
   list-style: none;
   text-align: center;
+  width: 500px;
 }
   
 .footer__menu-link {
